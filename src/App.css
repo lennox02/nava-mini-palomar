@@ -1,38 +1,78 @@
 .App {
   text-align: center;
+  padding-top: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cardHeader {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cardTable {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.cardTable td {
+  font-size: 16px;
+  padding-bottom: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardTableBoldCell {
+  font-weight: bold;
 }
+
+.showMore {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: grey;
+  font-size: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.showMore a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.moreSection {
+  height: 0px;
+  transition: all 1s ease;
+  overflow: hidden;
+}
+
+.moreSectionHidden {
+  height: 150px;
+  transition: all 1s ease;
+  overflow: hidden;
+}
+
+.moreInnerContainer {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.moreRow {
+  padding-top: 20px;
+}
+
+a:visited { text-decoration: none; color:SteelBlue; }
+a:hover { text-decoration: none; color:SteelBlue; }
+a:focus { text-decoration: none; color:SteelBlue; }
+a:hover, a:active { text-decoration: none; color:cornflowerblue }
