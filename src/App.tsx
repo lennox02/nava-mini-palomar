@@ -39,7 +39,7 @@ function App() {
                 <td className="cardTableBoldCell">{company.plan_year}</td>
               </tr>
             </table>
-            <div className="showMore"><a href="#" onClick={() => showHide(i)}>{shown[i+""] ? "Show less ▲" : "Show more ▼"}</a></div>
+            <div className="showMore"><a onClick={() => showHide(i)}>{shown[i+""] ? "Show less ▲" : "Show more ▼"}</a></div>
             <div className={shown[i+""] ? "moreSectionHidden" : "moreSection"}>
               <div className="moreInnerContainer">
                 <div className="moreRow"><span style={{fontWeight: "bold"}}>Premium:</span> ${(company.premium_sum).toLocaleString("en-US")}</div>
